@@ -1,8 +1,7 @@
 # Docker ELK stack
 
-[![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker-compose.
+Run the the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker-compose.
 
 It will give you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch and the visualization power of Kibana.
 
@@ -12,11 +11,6 @@ Based on the official images:
 * [logstash](https://github.com/elastic/logstash-docker)
 * [kibana](https://github.com/elastic/kibana-docker)
 
-**Note**: Other branches in this project are available:
-
-* ELK 5 with X-Pack support: https://github.com/deviantony/docker-elk/tree/x-pack
-* ELK 5 in Vagrant: https://github.com/deviantony/docker-elk/tree/vagrant
-* ELK 5 with Search Guard: https://github.com/deviantony/docker-elk/tree/searchguard
 
 # Requirements
 
