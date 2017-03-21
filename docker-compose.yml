@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+
+  elasticsearch:
+    build: elasticsearch/
+    environment:
+      ES_JAVA_OPTS: -Xms256m -Xmx256m
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - elk
+
+
+  kibana:
+    build: kibana/
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config
+    ports:
+      - "5601:5601"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+networks:
+
+  elk:
+    driver: bridge
